@@ -1,0 +1,45 @@
+.container-label{
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+
+
+.content{
+    display: flex;
+    align-items: center;
+    background-color: #0d0d0dcc;
+    color: white;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    height: 40px;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+.content p{
+    z-index: 1000;
+    text-shadow: -1px 1px 0 black;
+}
+
+
+.container-label::after{
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #00d0ffc0;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    top: 0;
+}
+
+.actived::after {
+    right: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+   
